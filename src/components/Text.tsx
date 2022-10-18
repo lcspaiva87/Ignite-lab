@@ -8,7 +8,7 @@ export interface TextProps {
 
 }
 export function Text({ size = 'md', children, asChiled }: TextProps) {
-  const Comp = asChiled ? Slot : 'h2'
+  const Comp = asChiled ? Slot : 'span'
   return (
     <Comp
       className={clsx(
